@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Expanded(
-            flex: 4,
+            flex: 3,
             child: GridView.builder(
               itemCount: 9,
               gridDelegate:
@@ -104,6 +104,20 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 );
               },
+            ),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Color.fromARGB(228, 255, 255, 255),
+            ),
+            onPressed: _limparPlacar,
+            child: Text(
+              "Zerar o placar",
+              style: TextStyle(
+                fontSize: 17,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
             ),
           ),
         ],
@@ -223,5 +237,12 @@ class _MyHomePageState extends State<MyHomePage> {
     });
 
     jogadas = 0;
+  }
+
+  void _limparPlacar() {
+    setState(() {
+      xScore = 0;
+      oScore = 0;
+    });
   }
 }
