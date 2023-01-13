@@ -1,4 +1,4 @@
-# tic_tac_toe
+# Tic Tac Toe
 
 Projeto de jogo da velha com o objetivo de colocar em prática os widgets aprendidos nos projetos anteriores e aprender novos widgets (GridView e AlertDialog), além de exercitar a lógica de programação.
 
